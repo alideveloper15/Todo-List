@@ -1,11 +1,8 @@
-const todoList = [{
+let todoList = JSON.parse(localStorage.getItem('todoList')) || [{
     name:'make dinner',
     dueDate: '2025-6-22'
-},  {
-    name: 'wash dishes',
-    dueDate: '2025-6-22'
-}]
-
+}
+]
 
 renderTodoList()
 
@@ -31,6 +28,7 @@ function renderTodoList(){
     document.querySelector('.js-todo-list')
         .innerHTML= todoListHTML
 
+    localStorage.setItem('todoList',JSON.stringify(todoList))
 }
 
 
