@@ -1,6 +1,22 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgb(167, 167, 167),rgb(0, 255, 255));
 }
+
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .todo-grid,.todo-input-grid{
     display: grid;
     grid-template-columns: 200px 145px 100px;
@@ -16,7 +32,8 @@ body{
 
 .name-input,.due-date-input{
     font-size: 15px;
-    padding: 6px;
+    padding: 12px 12px 12px 12px;
+    border: none;
 }
 
 .add-todo-button,.delete-todo-button{
